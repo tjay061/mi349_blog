@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog_MI349</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>A Random's Game Blog</h1>
-      <p><i>yo who wrote this?, anyway here's the navigation</i></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contacts</a></li>
-        </ul>
-      </nav>
+      <p><i>yo, who wrote this? Anyway, here's the navigation.</i></p>
     </header>
+    
+    <!--Couldn't figure out how to make the nav's sticky position work within the header-->
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+
     <main>
-        <article class="Post1">
+      <section id="Blog">
+        <article class="Post">
             <h2><b>Welcome! First Post!</b></h2>
             <address class="author">Terence Bronaugh</address>
-            <time datetime="2023-10-29"  title="October 29,2023">October 29th, 2023</time>
+            <time datetime="2023-10-29"  title="October 29,2023"><i>October 29th, 2023</i></time>
             <p>
               To be honest, I had no idea what I should make for this blog of mine. Should I just talk about myself? Talk about miscellaneous topics? I was frankly at a loss (this is why I hate assignments with open-ended topics or too many choices). All that being said staying indecisive won’t really help me here so I’ll just go with a bit of a mixture of two ideas, This blog will just be my non-important opinions and mostly just on video games since that is the easiest for me to talk about anyway. But in this first post, it's time to start setting up my disclaimer, I’d say skip it if it's too boring but that sorta defeats the purpose.
             </p> 
@@ -35,12 +39,12 @@
               </p>
             <div class="Image"><img alt="Simple Image that reads 'Game Time'" src="src/images/GameTimejpg.jpg" ></div>
         </article>
-
-        <article class="Post2">
+      
+        <article class="Post">
             <h2><b>Honest Thoughts and Opinions on Starfield (and why they dont matter)</b></h2>
-            <address class="author">Terence Bronaugh</address>
-            <time datetime="2023-10-29"  title="October 29,2023">October 29th, 2023</time>
             <div class="Image"><img alt="Simple Image that reads 'Game Time'" src="src/images/starfield.jpg" ></div>
+            <address class="author">Terence Bronaugh</address>
+            <time datetime="2023-10-29"  title="October 29,2023"><i>October 29th, 2023</i></time>
             <p>
               I want to preface here that I don’t think that Starfield is a bad game, but as I’ll talk about below, it IS a game held back by archaic game design, design of which hasn’t just been done before, but better in even previous Bethesda games. 
             </p>
@@ -70,7 +74,7 @@
             <p> 
               Below is a table showing how much I was personally enjoying the game in my first 30 hours of gameplay. It definitely increased over time as I started focusing on questlines, but I honestly forgot to write about it in the main post.
             </p>
-            <table>
+            <table id="table">
               <tr>
                 <th>Hours</th>
                 <th>Enjoyment</th>
@@ -101,13 +105,14 @@
               </tr>
             </table>
         </article>
+      </section>
+      <section id="Newsletter">
+        <article>
+          <h3>Newsletter</h3>
+          <label>Sign up for our Newsletter! <input type="text"></label>
+          <button>Subscribe</button>
+        </article>
+      </section>
     </main>
-    <section>
-      <h3>Newsletter</h3>
-        <label>Sign up for our Newsletter!
-          <input type="text">
-        </label>
-        <button>Subscribe</button>
-    </section>
   </body>
 </html>

@@ -5,52 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog_MI349</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>Contact a Random</h1>
       <p><i>Still me btw</i></p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contacts</a></li>
-        </ul>
-      </nav>
     </header>
-    <h2>
-      Form:
-    </h2>
-    <form action="/my-handling-form-page" method="post">
+    
+    <nav>
       <ul>
-        <li>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
-        </li>
-        <li>
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
-        </li>
-        <li>
-          <label for="msg">Reason:</label>
-          <input list="options">
-          <datalist id="options">
-            <option value="Saying hi!">
-            <option value="Looking for a contractor.">
-            <option value="Interested in an interview.">
-          </datalist>
-        </li>
-        <li>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-        </li>
-        <li>
-          <div class="submitbutton">
-            <button type="button">Submit Message</button> <!--for reference, if you ever want this to actually submit data future me, change type to "submit"-->
-          </div>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contacts</a></li>
       </ul>
-  </form>
+    </nav>
+
+    <main>
+      <h2>Form:</h2>
+      <form action="/my-handling-form-page" method="post">
+          <ul>
+            <li>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name"  placeholder="Name..">
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="Email..">
+            </li>
+            <li>
+              <label for="msg">Reason:</label>
+              <input list="options" placeholder="Select Reason for contact">
+              <datalist id="options">
+                <option value="Saying hi!">
+                <option value="Looking for a contractor.">
+                <option value="Interested in an interview.">
+              </datalist>
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message" placeholder="Type Message..."></textarea>
+            </li>
+            <li>
+              <div class="submitbutton">
+                <button type="button">Submit Message</button> <!--for reference, if you ever want this to actually submit data future me, change type to "submit"-->
+              </div>
+            </li>
+          </ul>
+      </form>
+    </main>
   </body>
 </html>
